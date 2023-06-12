@@ -1,0 +1,85 @@
+12:27:44 PM Blob-assignment2: Starting deployment...
+12:27:44 PM Blob-assignment2: Creating zip package...
+12:27:44 PM Blob-assignment2: Zip package size: 4.5 kB
+12:27:55 PM Blob-assignment2: Updating submodules.
+12:27:56 PM Blob-assignment2: Preparing deployment for commit id '41351f3c-7'.
+12:27:56 PM Blob-assignment2: PreDeployment: context.CleanOutputPath False
+12:27:56 PM Blob-assignment2: PreDeployment: context.OutputPath /home/site/wwwroot
+12:27:56 PM Blob-assignment2: Repository path is /tmp/zipdeploy/extracted
+12:27:56 PM Blob-assignment2: Running oryx build...
+12:27:56 PM Blob-assignment2: Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.10.4 -p packagedir=.python_packages/lib/site-packages
+12:27:56 PM Blob-assignment2: Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+12:27:56 PM Blob-assignment2: You can report issues at https://github.com/Microsoft/Oryx/issues
+12:27:56 PM Blob-assignment2: Oryx Version: 0.2.20230210.1, Commit: a49c8f6b8abbe95b4356552c4c884dea7fd0d86e, ReleaseTagName: 20230210.1
+12:27:56 PM Blob-assignment2: Build Operation ID: 74b8b667acfc0384
+12:27:56 PM Blob-assignment2: Repository Commit : 41351f3c-7675-44b1-a724-da433f64a70c
+12:27:56 PM Blob-assignment2: OS Type           : bullseye
+12:27:56 PM Blob-assignment2: Image Type        : githubactions
+12:27:56 PM Blob-assignment2: Detecting platforms...
+12:27:57 PM Blob-assignment2: Detected following platforms:
+12:27:57 PM Blob-assignment2:   python: 3.10.4
+12:27:57 PM Blob-assignment2: Source directory     : /tmp/zipdeploy/extracted
+12:27:57 PM Blob-assignment2: Destination directory: /home/site/wwwroot
+12:27:57 PM Blob-assignment2: Python Version: /tmp/oryx/platforms/python/3.10.4/bin/python3.10
+12:27:57 PM Blob-assignment2: Creating directory for command manifest file if it does not exist
+12:27:57 PM Blob-assignment2: Removing existing manifest file
+12:27:57 PM Blob-assignment2: Running pip install...
+12:27:58 PM Blob-assignment2: Done in 1 sec(s).
+12:27:58 PM Blob-assignment2: [06:57:58+0000] Collecting azure-functions
+12:27:58 PM Blob-assignment2: [06:57:58+0000]   Using cached azure_functions-1.14.0-py3-none-any.whl (165 kB)
+12:27:58 PM Blob-assignment2: [06:57:58+0000] Installing collected packages: azure-functions
+12:27:58 PM Blob-assignment2: [06:57:58+0000] Successfully installed azure-functions-1.14.0
+12:27:58 PM Blob-assignment2: WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+12:27:58 PM Blob-assignment2: WARNING: You are using pip version 21.2.4; however, version 23.1.2 is available.
+12:27:58 PM Blob-assignment2: You should consider upgrading via the '/tmp/oryx/platforms/python/3.10.4/bin/python3.10 -m pip install --upgrade pip' command.
+12:27:58 PM Blob-assignment2: Not a vso image, so not writing build commands
+12:27:58 PM Blob-assignment2: Preparing output...
+12:27:58 PM Blob-assignment2: Copying files to destination directory '/home/site/wwwroot'...
+12:27:58 PM Blob-assignment2: Done in 0 sec(s).
+12:27:58 PM Blob-assignment2: Removing existing manifest file
+12:27:58 PM Blob-assignment2: Creating a manifest file...
+12:27:58 PM Blob-assignment2: Manifest file created.
+12:27:58 PM Blob-assignment2: Copying .ostype to manifest output directory.
+12:27:58 PM Blob-assignment2: Done in 1 sec(s).
+12:28:00 PM Blob-assignment2: Running post deployment command(s)...
+12:28:00 PM Blob-assignment2: Generating summary of Oryx build
+12:28:00 PM Blob-assignment2: Deployment Log file does not exist in /tmp/oryx-build.log
+12:28:00 PM Blob-assignment2: The logfile at /tmp/oryx-build.log is empty. Unable to fetch the summary of build
+12:28:00 PM Blob-assignment2: Triggering recycle (preview mode disabled).
+12:28:00 PM Blob-assignment2: Linux Consumption plan has a 1.5 GB memory limit on a remote build container.
+12:28:00 PM Blob-assignment2: To check our service limit, please visit https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale#service-limits
+12:28:00 PM Blob-assignment2: Writing the artifacts to a squashfs file
+12:28:00 PM Blob-assignment2: Parallel mksquashfs: Using 1 processor
+12:28:00 PM Blob-assignment2: Creating 4.0 filesystem on /home/site/artifacts/functionappartifact.squashfs, block size 131072.
+12:28:00 PM Blob-assignment2: [===============================================================|] 145/145 100%
+12:28:00 PM Blob-assignment2: Exportable Squashfs 4.0 filesystem, gzip compressed, data block size 131072
+12:28:00 PM Blob-assignment2: 	compressed data, compressed metadata, compressed fragments,
+12:28:00 PM Blob-assignment2: 	compressed xattrs, compressed ids
+12:28:00 PM Blob-assignment2: 	duplicates are removed
+12:28:00 PM Blob-assignment2: Filesystem size 329.20 Kbytes (0.32 Mbytes)
+12:28:00 PM Blob-assignment2: 	27.13% of uncompressed filesystem size (1213.26 Kbytes)
+12:28:00 PM Blob-assignment2: Inode table size 1529 bytes (1.49 Kbytes)
+12:28:00 PM Blob-assignment2: 	28.77% of uncompressed inode table size (5314 bytes)
+12:28:00 PM Blob-assignment2: Directory table size 1581 bytes (1.54 Kbytes)
+12:28:00 PM Blob-assignment2: 	36.66% of uncompressed directory table size (4313 bytes)
+12:28:00 PM Blob-assignment2: Number of duplicate files found 4
+12:28:00 PM Blob-assignment2: Number of inodes 166
+12:28:00 PM Blob-assignment2: Number of files 148
+12:28:00 PM Blob-assignment2: Number of fragments 11
+12:28:00 PM Blob-assignment2: Number of symbolic links  0
+12:28:00 PM Blob-assignment2: Number of device nodes 0
+12:28:00 PM Blob-assignment2: Number of fifo nodes 0
+12:28:00 PM Blob-assignment2: Number of socket nodes 0
+12:28:00 PM Blob-assignment2: Number of directories 18
+12:28:00 PM Blob-assignment2: Number of ids (unique uids + gids) 1
+12:28:00 PM Blob-assignment2: Number of uids 1
+12:28:00 PM Blob-assignment2: 	root (0)
+12:28:00 PM Blob-assignment2: Number of gids 1
+12:28:00 PM Blob-assignment2: 	root (0)
+12:28:00 PM Blob-assignment2: Creating placeholder blob for linux consumption function app...
+12:28:00 PM Blob-assignment2: Malformed SCM_RUN_FROM_PACKAGE when uploading built content.
+12:28:00 PM Blob-assignment2: Generating summary of Oryx build
+12:28:00 PM Blob-assignment2: Deployment Log file does not exist in /tmp/oryx-build.log
+12:28:00 PM Blob-assignment2: The logfile at /tmp/oryx-build.log is empty. Unable to fetch the summary of build
+12:28:01 PM Blob-assignment2: Deployment Failed. deployer = ms-azuretools-vscode deploymentPath = Functions App ZipDeploy. Extract zip. Remote build.
+12:28:32 PM Blob-assignment2: Deployment failed
